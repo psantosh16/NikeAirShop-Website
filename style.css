@@ -116,10 +116,13 @@ word-break: normal;
   width: 90%;
   border-radius: 20px;
 }
-.cards P{
+.cards p{
   margin: 10PX 0;
   font-size: 30px;
   font-weight: 600;
+}
+.cards p:hover{
+  color: #FF0000;
 }
 
 /**************** Projects ****************/
