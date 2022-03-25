@@ -1,265 +1,263 @@
-* {
-  box-sizing: border-box;
+*{
   margin: 0%;
   padding: 0%;
+  box-sizing: border-box;
 }
-.container1 {
-  /* border: 2px solid green; */
-  height: 100%;
-  margin: 5px;
-}
-
-/*---------------------- Flex Left--------------------- */
-.flex-text {
-  padding-top: 10%;
-  padding-bottom: 10%;
-  padding-left: 35px;
-  width: 45%;
-  height: auto;
-  /* background-color: antiquewhite; */
-  font-size: 90px;
-  text-transform: uppercase;
-}
-p span {
-  color: blue;
-}
-h2 {
-  color: grey;
+body{
+  background-color: aliceblue;
 }
 
-/*---------------------- Flex Right--------------------- */
-.flex-img {
-  width: 45%;
-  height: auto;
-  /* background-color: aquamarine; */
-  background-image: url(../Images/Shape.png);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-/*---------------------- Flex mid --------------------- */
-/* Ignore */
-.flex-empty {
-  width: 10%;
-  height: auto;
-  /* background-color: blueviolet; */
-}
-/* -------------- Button ------------------------- */
-a.btn {
-  background-color: rgb(50, 102, 233);
-  color: aliceblue;
-  padding: 10px 20px;
-}
-a.btn:hover {
-  background-color: #d1d506;
-}
 
-/* -------------- Product -------------------------- */
-.container2 {
-  /* border: 2px solid green; */
-  height: 100%;
-  margin: 5px;
-}
-.flex-img1 {
-  width: 33.33%;
-  height: auto;
-  /* background-color: cadetblue; */
-}
-.flex-img2 {
-  width: 33.33%;
-  height: auto;
-  /* background-color: cadetblue; */
-}
-.flex-img3 {
-  width: 33.33%;
-  height: auto;
-  /* background-color: cadetblue; */
-}
-
-.flex-img1 img {
-  width: 98%;
-  height: 80%;
+/* navbar */
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   margin: 10px;
-  border-radius: 30px;
-  transition: 0.2s all;
+  align-items: center;
 }
-.flex-img2 img {
-  width: 98%;
-  height: 80%;
-  margin: 10px;
-  border-radius: 30px;
-  transition: 0.2s all;
+#navbar img{
+width: 25%;
+height: 5%;
+padding: 10px;
 }
-.flex-img3 img {
-  width: 98%;
-  height: 80%;
-  margin: 10px;
-  border-radius: 30px;
-  transition: 0.2s all;
+#navbar ul{
+  display: flex;
+  list-style: none;
 }
-/* ------------------------------- Price ------------------------------ */
-.container2 h4 {
-  color: black;
-  text-align: left;
-  padding-top: 2%;
-  font-weight: bold;
-  margin-left: 20px;
-}
-
-/* Animation */
-.flex-img1 img:hover {
-  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.412);
-  transform: scale(1.05);
-}
-.flex-img2 img:hover {
-  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.405);
-  transform: scale(1.05);
-}
-.flex-img3 img:hover {
-  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.419);
-  transform: scale(1.05);
-}
-
-.container2 h4:hover {
-  color: rgba(255, 0, 0, 0.576);
-}
-
-/* ---------------------------- Deal ----------------------------------- */
-.container3 {
-  /* border: 2px solid green; */
-  height: 100%;
-  margin: 5px;
-  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
-    radial-gradient(
-      91% 146%,
-      rgba(255, 255, 255, 0.5) 47%,
-      rgba(0, 0, 0, 0.5) 100%
-    );
-  background-blend-mode: screen;
-}
-.flex-banner {
-  width: 50%;
-  height: auto;
-  /* background-color:red; */
-  padding-left: 20px;
-  justify-content: center;
-}
-.flex-para {
-  width: 50%;
-  height: auto;
-  /* background-color: green; */
-  padding-left: 20px;
-  padding-top: 10px;
-}
-.flex-para P {
-  font-size: 30px;
+li{
   padding: 10px;
-  color: grey;
+  margin: 5px;
+}
+li a{
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
 }
 
-/* --------------------- Cards Programmers ----------------------------- */
-.container3 {
-  /* border: 2px solid green; */
-  height: 100%;
-  margin: 5px;
+/* container */
+#container{
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 80px 10px;
+  width: 90%;
+  height: auto;
+}
+
+
+/* text */
+#container .text{
+  width: 90%;
+  font-size: 20px;
+  /* padding: 30px; */
+  margin: 40px 0;
+  word-break: break-all;
+}
+.text h1 span{
+color: blue;
+word-break: normal;
+}
+.text p{
+  color: gray;
+  margin: 20px 0;
+}
+.text button{
+  padding: 10px 20px ;
+  background-color: blue;
   border-radius: 20px;
 }
-.tools {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.text button a{
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  border: 0px;
+}
+
+/* image */
+#container .img{
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  padding: 9px;
+  position: relative;
+  width: 90%;
+  top: 0%;
+  left: 0%;
 }
-/* designs for cards */
-.circle {
-  padding: 0 4px;
-}
-
-.box {
-  display: inline-block;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
-  border-radius: 50%;
-}
-
-.red {
-  background-color: #ff605c;
-}
-
-.yellow {
-  background-color: #ffbd44;
-}
-
-.green {
-  background-color: #00ca4e;
-}
-
-.card-content img {
+.img1{
   width: 100%;
-  height: 100%;
+  height: auto;
+  position: relative;
+  top: 10px;
+  left: 10px;
 }
-.card-content q {
-  font-size: 20px;
-  font-style: italic;
+.img2{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
-.card-content h6 {
-  text-align: center;
-  color: rgb(77, 75, 75);
-  font-weight: bold;
+
+
+/* Sneakers */
+
+#sneakers{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.cards{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.cards img{
+  width: 90%;
+  border-radius: 20px;
+}
+.cards P{
+  margin: 10PX 0;
   font-size: 30px;
-  padding: 15px;
-}
-.card-content img:hover {
-  transform: scale(1.05);
+  font-weight: 600;
 }
 
-/* --------------------------------- Sponsers -------------------------------------- */
-.container5 {
-  /* border: 2px solid green; */
+/**************** Projects ****************/
+
+#projects{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin: 20px 0;
+}
+.item{
+  /* padding: 10px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  width: 100%;
+  /* border-radius: 20px; */
+  /* border: 2px solid black; */
+
+}
+.item img{
+  width: 90%;
   height: 100%;
-  margin: 5px;
+  margin: 0 0 10px 0;
+  border-radius: 4px;
 }
-.flex-11 {
-  width: 25%;
-  height: 50%;
+.item p{
+margin: 10px 0;
 }
-.flex-12 {
-  width: 25%;
-  height: 50%;
+.item p a{
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+
 }
-.flex-13 {
-  width: 25%;
-  height: 50%;
-}
-.flex-14 {
-  width: 25%;
-  height: 50%;
+.item p a:hover{
+  text-transform:capitalize;
+  font-weight: 900;
+  font-size: 20px;
 }
 
-/* Sponser img */
-.flex-11 img{
-    width: 50%;
-    height: 50%;
-    padding: 20px;
-    padding-top: 90px;
+
+footer{
+  background-color: rgb(34, 34, 34);
+  padding: 10px 0;
+}
+footer h2{
+  text-align: center;
+  color: aliceblue;
+  font-size: 10px;
+}
+h2 a{
+  text-decoration: none;
+  color: aliceblue;
+}
+h2 a:hover{
+  color: aquamarine;
+  text-transform: uppercase;
+}
+
+
+
+
+
+@media screen and (min-width: 820px){
+  #navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    flex-direction: row;
+    
   }
-  .flex-12 img{
-    width: 50%;
-    height: 50%;
-    padding: 20px;
+  #navbar img{
+  width: 5%;
+  height: 2%;
+  padding: 10px;
   }
-  .flex-13 img{
-    width: 50%;
-    height: 50%;
-    padding: 20px;
+  #container{
+    display: flex;
+    flex-direction: row;
+    margin: 80px 5px;
+    width: 100%;
+    height: auto;
   }
-  .flex-14 img{
-    width: 50%;
-    height: 50%;
-    padding: 20px;
+  #container .text{
+    width: 90%;
+    font-size: 35px;
+    /* padding: 30px; */
+    margin: 40px 10px;
+    word-break: break-all;
   }
-/* ---------------------------------------------------------  End of CSS :) -------------------------------------------------------------- */
+  #sneakers{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .cards img{
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  .cards P{
+    margin: 30PX 0;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .item img{
+    width: 90%;
+    height: 100%;
+    margin: 0 0 10px 0;
+    border-radius: 8px;
+  }
+  .item p a{
+    color: black;
+    padding: 10px;
+    font-size: 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+  
+  }
+  .item p a:hover{
+    text-transform:capitalize;
+    font-weight: 900;
+    color: rgb(235, 147, 15);
+    font-size: 40px;
+  }
+}
